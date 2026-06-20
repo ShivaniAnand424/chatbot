@@ -1,0 +1,110 @@
+/* ── STICKY TOP NAVIGATION BAR ── */
+.menu-rail {
+  position: sticky; 
+  top: 68px; /* Locked right below main header nav */
+  z-index: 90;
+  height: auto; 
+  max-height: 60px;
+  display: flex; 
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow-x: auto; 
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding: 12px 5%; 
+  border-bottom: 1px solid var(--border);
+  gap: 10px; 
+  background: var(--bg);
+  scrollbar-width: thin;
+}
+
+.rail-item {
+  width: auto; 
+  white-space: nowrap; 
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-family: var(--ff-body);
+  font-size: 0.85rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.rail-item:hover { color: var(--cream); background: var(--card); }
+.rail-item.active {
+  color: #1a1410;
+  background: var(--gold);
+  font-weight: 500;
+}
+
+/* ── VERTICAL LAYOUT CONTENT ── */
+.menu-content { 
+  padding: 40px 5% 60px; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-category { margin-bottom: 56px; scroll-margin-top: 140px; } /* Increased offset for top nav */
+.menu-category:last-child { margin-bottom: 0; }
+
+.category-title {
+  font-family: var(--ff-disp);
+  font-size: 1.8rem;
+  color: var(--cream);
+  margin-bottom: 4px;
+}
+.category-sub {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.subgroup-title {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 32px 0 14px;
+  font-weight: 500;
+}
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.item-info { flex: 1; }
+.item-name {
+  font-family: var(--ff-disp);
+  font-size: 1.1rem;
+  color: var(--cream);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.item-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.55;
+  max-width: 650px;
+}
+.item-price {
+  font-size: 1rem;
+  color: var(--gold);
+  font-weight: 500;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+.milk-note {
+  font-size: 0.82rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 32px;
+  line-height: 1.6;
+}

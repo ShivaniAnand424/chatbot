@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CORRIDOR_SEVEN — Menu</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="css/style.css"/>
+  
+  <link rel="stylesheet" href="css/menu_css.css"/>
+</head>
+<body>
+
+  <nav>
+    <a href="home.html" class="nav-logo">CORRIDOR SEVEN</a>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="order.html" class="nav-cta">Order now</a>
+  </nav>
+
+  <section class="page-hero" style="padding-bottom: 20px;">
+    <p class="section-label">What we serve</p>
+    <h2 class="section-title">The <span>menu</span></h2>
+  </section>
+
+  <nav class="menu-rail" aria-label="Menu categories">
+    <button class="rail-item active" onclick="scrollToCategory('espresso-milk', this)">Espresso · with milk</button>
+    <button class="rail-item" onclick="scrollToCategory('espresso-no-milk', this)">Espresso · no milk</button>
+    <button class="rail-item" onclick="scrollToCategory('burgers', this)">Burger to bagel</button>
+    <button class="rail-item" onclick="scrollToCategory('sandwiches', this)">Sandwiches &amp; plates</button>
+    <button class="rail-item" onclick="scrollToCategory('new', this)">Newly launched</button>
+    <button class="rail-item" onclick="scrollToCategory('non-coffee', this)">Non-coffee &amp; experimental</button>
+  </nav>
+
+  <div class="menu-content">
+
+    <div class="menu-category" id="espresso-milk">
+      <h3 class="category-title">Espresso bar</h3>
+      <p class="category-sub">With milk</p>
+
+      <p class="subgroup-title">Cold</p>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Soul Latte</div><div class="item-desc">A super refreshing beverage — sweet milky coffee with a hint of coconut, feels like all things summer.</div></div>
+        <div class="item-price">₹185</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Blacksmith</div><div class="item-desc">In-house blend of thick black milk served with chilled espresso and ice. First time is a must try.</div></div>
+        <div class="item-price">₹210</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Iced Latte</div><div class="item-desc">One of the most iconic espresso drinks — made with milk, topped with our rich, freshly ground & brewed espresso served over ice.</div></div>
+        <div class="item-price">₹175</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Double Ducktape</div><div class="item-desc">Our in-house recipe of a sweet and creamy blend of coffee — typically appropriate for individuals with lactose intolerance.*</div></div>
+        <div class="item-price">₹280</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Caramel Espresso Bloom</div><div class="item-desc">A concoction of sweet caramel & espresso blended together for a synergy of prevalent flavours, topped with whipped cream.</div></div>
+        <div class="item-price">₹265</div>
+      </div>
+
+      <p class="subgroup-title">Hot</p>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Cortado</div><div class="item-desc">Equal parts of milk and a double shot espresso. Smooth. Kickass.</div></div>
+        <div class="item-price">₹155</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Flat White</div><div class="item-desc">A shot of ristretto (restricted espresso) with steamed milk and a thin layer of microfoam. Smooth mouthfeel, strong cup.</div></div>
+        <div class="item-price">₹160</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Cappuccino</div><div class="item-desc">A double shot of espresso with steamed milk and a thick layer of microfoam.</div></div>
+        <div class="item-price">₹160</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Nameless</div><div class="item-desc">A traditional cappuccino with a subtle punch of our in-house blend chocolate.</div></div>
+        <div class="item-price">₹165</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Latte</div><div class="item-desc">A single shot of espresso with more milk and a thin layer of microfoam.</div></div>
+        <div class="item-price">₹160</div>
+      </div>
+
+      <p class="milk-note">Plant based milk options: Soy milk +₹35 · Almond milk +₹55 · Lactose free milk +₹35 · Oat milk +₹55<br/>*Contains traces of milk solids</p>
+    </div>
+
+    <div class="menu-category" id="espresso-no-milk">
+      <h3 class="category-title">Espresso bar</h3>
+      <p class="category-sub">Without milk</p>
+
+      <p class="subgroup-title">Cold</p>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Iced Americano</div><div class="item-desc">Iced water topped with a double shot of espresso.</div></div>
+        <div class="item-price">₹140</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Espresso Tonic</div><div class="item-desc">Just the right hangover cure — bittersweet tonic water topped with a double shot of espresso.</div></div>
+        <div class="item-price">₹185</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Espresso Ginger Ale</div><div class="item-desc">Just another right hangover cure — a pop of ginger ale topped with a double shot of espresso.</div></div>
+        <div class="item-price">₹185</div>
+      </div>
+
+      <p class="subgroup-title">Hot</p>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Americano</div><div class="item-desc">Hot water topped with freshly brewed espresso.</div></div>
+        <div class="item-price">₹130</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Doppio</div><div class="item-desc">Double shot of freshly ground, precisely brewed espresso.</div></div>
+        <div class="item-price">₹120</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Ristretto</div><div class="item-desc">Restricted espresso — 20–26ml of concentrated double shot of espresso. Potent.</div></div>
+        <div class="item-price">₹120</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Espresso Romano</div><div class="item-desc">Two shots espresso with a slice of lemon.</div></div>
+        <div class="item-price">₹120</div>
+      </div>
+    </div>
+
+    <div class="menu-category" id="burgers">
+      <h3 class="category-title">Burger to bagel</h3>
+      <p class="category-sub">Savouries · available all day</p>
+
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Veg Bagel</div><div class="item-desc">House made bagel, lettuce, aioli, grilled tomato, pickled gherkins and cheese.</div></div>
+        <div class="item-price">₹245</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Veg Burger</div><div class="item-desc">House made burger bun, crispy veg patty, tkemali, mayonnaise, cheese, lettuce and cucumber.</div></div>
+        <div class="item-price">₹255</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Falafel Burger</div><div class="item-desc">Toasted bun, lettuce, hummus, house-made pomegranate molasses, falafel patty, cheese, gherkins, tomatoes.</div></div>
+        <div class="item-price">₹235</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Chicken Bagel</div><div class="item-desc">House made bagel, lettuce, grilled chicken, hollandaise, fried egg, cheese and mustard.</div></div>
+        <div class="item-price">₹275</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Chicken Burger</div><div class="item-desc">House made burger bun, lettuce, grilled chicken, jalapeno, tomato, caramelised onion, fried egg, cheese, aioli base.</div></div>
+        <div class="item-price">₹285</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Smoked Chicken Burger</div><div class="item-desc">Hickory wood smoked chicken kheema, salted tomatoes, lettuce, egg, cheese, house sauce.</div></div>
+        <div class="item-price">₹315</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Korean Chicken Burger</div><div class="item-desc">An asian twist to your chicken burger — tender chicken, topped with an egg, spring onions, spicy-sweet flavor bomb.</div></div>
+        <div class="item-price">₹325</div>
+      </div>
+    </div>
+
+    <div class="menu-category" id="sandwiches">
+      <h3 class="category-title">Sandwiches &amp; small plates</h3>
+      <p class="category-sub">Savouries · available all day</p>
+
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Pesto Mushroom Half Pounder</div><div class="item-desc">Basil pesto, creamy mushroom filling with cheese and lettuce.</div></div>
+        <div class="item-price">₹345</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Tomato Bellpepper Half Pounder</div><div class="item-desc">Roasted bell peppers, mildly hot roast tomato salsa, cream cheese, cheese, lettuce and gherkins.</div></div>
+        <div class="item-price">₹345</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">CLT Half Pounder</div><div class="item-desc">Juicy grilled chicken topped with chipotle sauce along with cheese and lettuce.</div></div>
+        <div class="item-price">₹365</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">BLT Half Pounder</div><div class="item-desc">Crispy bacon topped with chipotle sauce along with cheese and lettuce.</div></div>
+        <div class="item-price">₹385</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Crispies with Mushroom</div><div class="item-desc">House made french loaf slices, toasted and topped with pesto, mushroom ragout, mint-ricotta.</div></div>
+        <div class="item-price">₹195</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Crispies with Baked Beans</div><div class="item-desc">House made french loaf slices, toasted and topped with mildly hot baked beans, lemon juice and parsley.</div></div>
+        <div class="item-price">₹195</div>
+      </div>
+    </div>
+
+    <div class="menu-category" id="new">
+      <h3 class="category-title">Newly launched</h3>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Honey Butter Toast</div><div class="item-desc">Triple baked caramelized butter crusted toast served with vanilla cream and orange zest.</div></div>
+        <div class="item-price">₹290</div>
+      </div>
+    </div>
+
+    <div class="menu-category" id="non-coffee">
+      <h3 class="category-title">Non-coffee &amp; experimental</h3>
+
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Cassava Gold</div><div class="item-desc">Experimental non-coffee creation.</div></div>
+        <div class="item-price">₹145</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Sografik Cassava</div><div class="item-desc">Experimental non-coffee creation.</div></div>
+        <div class="item-price">₹175</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Sografik Cassava — Ginger Ale</div><div class="item-desc">Experimental non-coffee creation, with a ginger ale twist.</div></div>
+        <div class="item-price">₹175</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Hot Chocolate</div><div class="item-desc">Rich house-made hot chocolate.</div></div>
+        <div class="item-price">₹185</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Blueberry Hill</div><div class="item-desc">Fruit-forward blueberry creation.</div></div>
+        <div class="item-price">₹245</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Mixed Berry Smoothie</div><div class="item-desc">Blended mixed berries, smooth and chilled.</div></div>
+        <div class="item-price">₹245</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Warm Matcha Latte</div><div class="item-desc">Stone-ground matcha with warm steamed milk.</div></div>
+        <div class="item-price">₹195</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Iced Matcha Latte</div><div class="item-desc">Stone-ground matcha over ice with milk.</div></div>
+        <div class="item-price">₹185</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Matcha Mole Latte</div><div class="item-desc">Matcha latte with a spiced mole twist.</div></div>
+        <div class="item-price">₹195</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Mountain Bean Black Tea</div><div class="item-desc">Single-origin black tea, brewed clean.</div></div>
+        <div class="item-price">₹170</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Apple Cinnamon Tea</div><div class="item-desc">Warming spiced apple and cinnamon infusion.</div></div>
+        <div class="item-price">₹170</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">Hibiscus Lemongrass Tisane</div><div class="item-desc">Caffeine-free floral and citrus infusion.</div></div>
+        <div class="item-price">₹165</div>
+      </div>
+      <div class="item-row">
+        <div class="item-info"><div class="item-name">The Zen Plum</div><div class="item-desc">Experimental plum-forward creation.</div></div>
+        <div class="item-price">₹210</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-logo">Corridor Seven</div>
+    <div class="footer-copy">© 2026 Corridor Seven. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">Zomato</a>
+    </div>
+  </footer>
+
+  <button id="chat-bubble" onclick="toggleChat()" aria-label="Open chat">
+    ☕
+    <div id="chat-unread">1</div>
+  </button>
+
+  <div id="chat-panel" role="dialog" aria-label="Cafe assistant">
+    <div class="chat-header">
+      <div class="chat-avatar">🤖</div>
+      <div class="chat-header-info">
+        <div class="chat-header-name">C7 Assistant</div>
+        <div class="chat-status"><span class="chat-dot"></span> Online</div>
+      </div>
+      <button class="chat-close" onclick="toggleChat()" aria-label="Close chat">✕</button>
+    </div>
+    <div id="chat-messages"></div>
+    <div class="chat-suggestions">
+      <button class="chip" onclick="sendChip(this)">Top clients</button>
+      <button class="chip" onclick="sendChip(this)">Today's orders</button>
+      <button class="chip" onclick="sendChip(this)">Total revenue</button>
+    </div>
+    <div class="chat-input-area">
+      <textarea id="chat-input" rows="1" placeholder="Ask me anything…" onkeydown="handleKey(event)" oninput="autoGrow(this)"></textarea>
+      <button id="chat-send" onclick="sendMessage()" aria-label="Send">➤</button>
+    </div>
+  </div>
+
+  <script>
+    function scrollToCategory(id, btn) {
+      document.querySelectorAll('.rail-item').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      // Adjusted scroll offset to match the new top bar placement
+      const targetElement = document.getElementById(id);
+      const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - 130;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+
+    const sections = document.querySelectorAll('.menu-category');
+    const railItems = document.querySelectorAll('.rail-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const idx = [...sections].indexOf(entry.target);
+          railItems.forEach(b => b.classList.remove('active'));
+          if (railItems[idx]) {
+            railItems[idx].classList.add('active');
+            // Automatic scrolling configuration for the sticky layout link bar
+            railItems[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          }
+        }
+      });
+    }, { rootMargin: '-25% 0px -65% 0px' });
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+  <script src="js/storage.js"></script>
+  <script src="js/chatbot.js"></script>
+</body>
+</html>
