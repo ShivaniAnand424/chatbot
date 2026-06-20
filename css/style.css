@@ -78,10 +78,13 @@ nav {
 
 section { padding: 72px 5%; }
 .page-hero {
-  padding: 80px 5% 50px;
+  padding-top: 50px !important;    /* Tightens the gap right above 'WHAT WE SERVE' */
+  padding-bottom: 12px;           /* Reduces space below 'The menu' heading */
   text-align: center;
 }
 .section-label {
+  margin-top: 0;               /* Eliminates any leftover browser default margins */
+  margin-bottom: 8px;           
   font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase;
   color: var(--gold); font-weight: 500; margin-bottom: 0.8rem;
 }
