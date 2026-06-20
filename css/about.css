@@ -1,0 +1,101 @@
+/* ── ABOUT PAGE CONTAINERS ── */
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 5% 80px;
+}
+
+.intro-block {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.intro-text {
+  font-family: var(--ff-body);
+  font-size: 1.15rem;
+  color: var(--cream);
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+/* ── INFOGRAPHIC GRID ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.info-card {
+  background: var(--card, #1a1410);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.info-card h3 {
+  font-family: var(--ff-disp);
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ── INTERACTIVE ACTION BANNER ── */
+.about-cta-box {
+  text-align: center;
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  padding: 40px 30px;
+  background: linear-gradient(180deg, rgba(197, 160, 89, 0.05) 0%, rgba(0,0,0,0) 100%);
+}
+
+.about-cta-box h3 {
+  font-family: var(--ff-disp);
+  font-size: 1.6rem;
+  color: var(--cream);
+  margin-bottom: 16px;
+}
+
+.about-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (max-width: 480px) {
+  .about-cta-buttons {
+    flex-direction: column;
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 1px solid var(--border);
+  color: var(--cream);
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--card);
+  border-color: var(--muted);
+}
