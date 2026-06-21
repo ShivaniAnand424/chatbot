@@ -7,82 +7,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/style.css"/>
-
-  <style>
-    .order-wrap {
-      max-width: 560px;
-      margin: 0 auto;
-      padding: 0 5% 80px;
-    }
-
-    .order-form {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    .field-label {
-      display: block;
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-bottom: 8px;
-      font-weight: 400;
-    }
-
-    .order-form input,
-    .order-form textarea {
-      width: 100%;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--text);
-      font-family: var(--ff-body);
-      font-size: 0.92rem;
-      padding: 13px 16px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    .order-form input:focus,
-    .order-form textarea:focus { border-color: var(--gold-lt); }
-    .order-form input::placeholder,
-    .order-form textarea::placeholder { color: var(--muted); }
-    .order-form textarea { resize: vertical; min-height: 90px; }
-
-    .field-hint {
-      font-size: 0.76rem;
-      color: var(--muted);
-      margin-top: 6px;
-    }
-
-    .total-row {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 16px 0; border-top: 1px solid var(--border); margin-top: 6px;
-    }
-    .total-label { font-size: 0.9rem; color: var(--muted); }
-    .total-value { font-family: var(--ff-disp); font-size: 1.6rem; color: var(--gold); font-weight: 700; }
-
-    .submit-btn { width: 100%; text-align: center; margin-top: 6px; }
-
-    /* Confirmation panel, hidden until an order is placed */
-    .confirm-box {
-      display: none;
-      text-align: center;
-      padding: 40px 24px;
-    }
-    .confirm-box.show { display: block; }
-    .confirm-icon { font-size: 2.4rem; margin-bottom: 12px; }
-    .confirm-title { font-family: var(--ff-disp); font-size: 1.5rem; color: var(--cream); margin-bottom: 8px; }
-    .confirm-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
-    .confirm-id { font-size: 0.8rem; color: var(--gold); margin-bottom: 24px; }
-
-    .error-text {
-      color: #e07a7a;
-      font-size: 0.8rem;
-      margin-top: -10px;
-      display: none;
-    }
-    .error-text.show { display: block; }
-  </style>
+  <link rel="stylesheet" href="css/order.css"/>
 </head>
 <body>
 
@@ -100,45 +25,54 @@
   <section class="page-hero">
     <p class="section-label">Place an order</p>
     <h2 class="section-title">Tell us what you'd <span>like</span></h2>
-    <p class="section-sub center">Fill in your details below — we'll have it ready for pickup.</p>
+    <p class="section-sub center">Browse items, add them to your cart — the total is calculated for you.</p>
   </section>
 
   <section class="order-wrap">
 
-    <!-- ── ORDER FORM (visible by default) ── -->
-    <form class="order-form" id="order-form" onsubmit="handleOrderSubmit(event)">
+    <!-- ── ORDER FORM + PICKER (visible by default) ── -->
+    <div id="order-form-wrap">
+      <div class="order-grid">
 
-      <div>
-        <label class="field-label" for="cust-name">Your name</label>
-        <input type="text" id="cust-name" placeholder="e.g. Rahul Sharma" required />
+        <!-- LEFT: searchable item picker -->
+        <div class="picker-col">
+          <input type="text" id="item-search" class="search-input" placeholder="Search the menu… e.g. latte, burger" autocomplete="off" oninput="renderItemList()" />
+          <div class="item-list" id="item-list"></div>
+        </div>
+
+        <!-- RIGHT: cart + customer details -->
+        <div class="cart-col">
+          <div class="cart-box">
+            <div class="cart-title">Your order</div>
+            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-total-row">
+              <span>Total</span>
+              <span class="cart-total-value" id="cart-total">₹0</span>
+            </div>
+          </div>
+
+          <form class="customer-form" id="order-form" onsubmit="handleOrderSubmit(event)">
+            <div>
+              <label class="field-label" for="cust-name">Your name</label>
+              <input type="text" id="cust-name" placeholder="e.g. Rahul Sharma" required />
+            </div>
+            <div>
+              <label class="field-label" for="cust-phone">Phone number</label>
+              <input type="tel" id="cust-phone" placeholder="e.g. 98765 43210" required />
+              <div class="error-text" id="phone-error">Please enter a valid phone number.</div>
+            </div>
+            <button type="submit" class="btn-primary submit-btn" id="submit-btn" disabled>Add items to place order</button>
+          </form>
+        </div>
+
       </div>
-
-      <div>
-        <label class="field-label" for="cust-phone">Phone number</label>
-        <input type="tel" id="cust-phone" placeholder="e.g. 98765 43210" required pattern="[0-9+\-\s]{7,15}" />
-        <div class="error-text" id="phone-error">Please enter a valid phone number.</div>
-      </div>
-
-      <div>
-        <label class="field-label" for="cust-items">Order items</label>
-        <textarea id="cust-items" placeholder="e.g. 2x Flat White, 1x Veg Bagel" required></textarea>
-        <div class="field-hint">List each item — see our <a href="menu.html" style="color:var(--gold);">menu</a> for names and prices.</div>
-      </div>
-
-      <div>
-        <label class="field-label" for="cust-total">Order total (₹)</label>
-        <input type="number" id="cust-total" placeholder="e.g. 500" required min="1" step="1" />
-        <div class="field-hint">Add up the prices of items listed above.</div>
-      </div>
-
-      <button type="submit" class="btn-primary submit-btn">Place order</button>
-    </form>
+    </div>
 
     <!-- ── CONFIRMATION (shown after successful submit) ── -->
     <div class="confirm-box" id="confirm-box">
       <div class="confirm-icon">✅</div>
       <div class="confirm-title">Order placed!</div>
-      <p class="confirm-sub">Thanks — we've received your order and will have it ready shortly.</p>
+      <p class="confirm-sub" id="confirm-summary"></p>
       <p class="confirm-id" id="confirm-id"></p>
       <button class="btn-outline" onclick="resetOrderForm()">Place another order</button>
     </div>
@@ -181,48 +115,10 @@
     </div>
   </div>
 
-  <!-- ── PAGE-SPECIFIC SCRIPT: form handling ── -->
-  <script>
-    function handleOrderSubmit(e) {
-      e.preventDefault(); // stop the page from reloading (default form behaviour)
-
-      const name = document.getElementById('cust-name').value.trim();
-      const phone = document.getElementById('cust-phone').value.trim();
-      const items = document.getElementById('cust-items').value.trim();
-      const total = document.getElementById('cust-total').value;
-
-      /* Basic phone validation */
-      const phoneOk = /^[0-9+\-\s]{7,15}$/.test(phone);
-      const phoneError = document.getElementById('phone-error');
-      if (!phoneOk) {
-        phoneError.classList.add('show');
-        return;
-      }
-      phoneError.classList.remove('show');
-
-      /* Save the order using storage.js's addOrder() function */
-      const savedOrder = addOrder({
-        name: name,
-        phone: phone,
-        items: items,
-        total: Number(total)
-      });
-
-      /* Hide the form, show the confirmation */
-      document.getElementById('order-form').style.display = 'none';
-      document.getElementById('confirm-box').classList.add('show');
-      document.getElementById('confirm-id').textContent = 'Order ID: ' + savedOrder.id;
-    }
-
-    function resetOrderForm() {
-      document.getElementById('order-form').reset();
-      document.getElementById('order-form').style.display = 'flex';
-      document.getElementById('confirm-box').classList.remove('show');
-    }
-  </script>
-
-  <!-- ── SHARED SCRIPTS (order matters: storage.js loads BEFORE this page's script needs addOrder) ── -->
+  <!-- ── SCRIPTS (order matters: menu-data + storage load BEFORE order.js and chatbot.js) ── -->
+  <script src="js/menu-data.js"></script>
   <script src="js/storage.js"></script>
+  <script src="js/order.js"></script>
   <script src="js/chatbot.js"></script>
 </body>
 </html>
