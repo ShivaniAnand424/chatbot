@@ -1,0 +1,565 @@
+User_Query,Intent_Class
+do you have soul latte,menu_inquiry
+is soul latte available,menu_inquiry
+do you serve soul latte,menu_inquiry
+can I get a soul latte,menu_inquiry
+how much is soul latte,price_inquiry
+price of soul latte,price_inquiry
+what does soul latte cost,price_inquiry
+soul latte price,price_inquiry
+i want a soul latte,order_intent
+order a soul latte,order_intent
+can i order soul latte,order_intent
+give me a soul latte,order_intent
+do you have blacksmith,menu_inquiry
+is blacksmith available,menu_inquiry
+do you serve blacksmith,menu_inquiry
+can I get a blacksmith,menu_inquiry
+how much is blacksmith,price_inquiry
+price of blacksmith,price_inquiry
+what does blacksmith cost,price_inquiry
+blacksmith price,price_inquiry
+i want a blacksmith,order_intent
+order a blacksmith,order_intent
+can i order blacksmith,order_intent
+give me a blacksmith,order_intent
+do you have iced latte,menu_inquiry
+is iced latte available,menu_inquiry
+do you serve iced latte,menu_inquiry
+can I get a iced latte,menu_inquiry
+how much is iced latte,price_inquiry
+price of iced latte,price_inquiry
+what does iced latte cost,price_inquiry
+iced latte price,price_inquiry
+i want a iced latte,order_intent
+order a iced latte,order_intent
+can i order iced latte,order_intent
+give me a iced latte,order_intent
+do you have double ducktape,menu_inquiry
+is double ducktape available,menu_inquiry
+do you serve double ducktape,menu_inquiry
+can I get a double ducktape,menu_inquiry
+how much is double ducktape,price_inquiry
+price of double ducktape,price_inquiry
+what does double ducktape cost,price_inquiry
+double ducktape price,price_inquiry
+i want a double ducktape,order_intent
+order a double ducktape,order_intent
+can i order double ducktape,order_intent
+give me a double ducktape,order_intent
+do you have caramel espresso bloom,menu_inquiry
+is caramel espresso bloom available,menu_inquiry
+do you serve caramel espresso bloom,menu_inquiry
+can I get a caramel espresso bloom,menu_inquiry
+how much is caramel espresso bloom,price_inquiry
+price of caramel espresso bloom,price_inquiry
+what does caramel espresso bloom cost,price_inquiry
+caramel espresso bloom price,price_inquiry
+i want a caramel espresso bloom,order_intent
+order a caramel espresso bloom,order_intent
+can i order caramel espresso bloom,order_intent
+give me a caramel espresso bloom,order_intent
+do you have cortado,menu_inquiry
+is cortado available,menu_inquiry
+do you serve cortado,menu_inquiry
+can I get a cortado,menu_inquiry
+how much is cortado,price_inquiry
+price of cortado,price_inquiry
+what does cortado cost,price_inquiry
+cortado price,price_inquiry
+i want a cortado,order_intent
+order a cortado,order_intent
+can i order cortado,order_intent
+give me a cortado,order_intent
+do you have flat white,menu_inquiry
+is flat white available,menu_inquiry
+do you serve flat white,menu_inquiry
+can I get a flat white,menu_inquiry
+how much is flat white,price_inquiry
+price of flat white,price_inquiry
+what does flat white cost,price_inquiry
+flat white price,price_inquiry
+i want a flat white,order_intent
+order a flat white,order_intent
+can i order flat white,order_intent
+give me a flat white,order_intent
+do you have cappuccino,menu_inquiry
+is cappuccino available,menu_inquiry
+do you serve cappuccino,menu_inquiry
+can I get a cappuccino,menu_inquiry
+how much is cappuccino,price_inquiry
+price of cappuccino,price_inquiry
+what does cappuccino cost,price_inquiry
+cappuccino price,price_inquiry
+i want a cappuccino,order_intent
+order a cappuccino,order_intent
+can i order cappuccino,order_intent
+give me a cappuccino,order_intent
+do you have nameless,menu_inquiry
+is nameless available,menu_inquiry
+do you serve nameless,menu_inquiry
+can I get a nameless,menu_inquiry
+how much is nameless,price_inquiry
+price of nameless,price_inquiry
+what does nameless cost,price_inquiry
+nameless price,price_inquiry
+i want a nameless,order_intent
+order a nameless,order_intent
+can i order nameless,order_intent
+give me a nameless,order_intent
+do you have latte,menu_inquiry
+is latte available,menu_inquiry
+do you serve latte,menu_inquiry
+can I get a latte,menu_inquiry
+how much is latte,price_inquiry
+price of latte,price_inquiry
+what does latte cost,price_inquiry
+latte price,price_inquiry
+i want a latte,order_intent
+order a latte,order_intent
+can i order latte,order_intent
+give me a latte,order_intent
+do you have iced americano,menu_inquiry
+is iced americano available,menu_inquiry
+do you serve iced americano,menu_inquiry
+can I get a iced americano,menu_inquiry
+how much is iced americano,price_inquiry
+price of iced americano,price_inquiry
+what does iced americano cost,price_inquiry
+iced americano price,price_inquiry
+i want a iced americano,order_intent
+order a iced americano,order_intent
+can i order iced americano,order_intent
+give me a iced americano,order_intent
+do you have espresso tonic,menu_inquiry
+is espresso tonic available,menu_inquiry
+do you serve espresso tonic,menu_inquiry
+can I get a espresso tonic,menu_inquiry
+how much is espresso tonic,price_inquiry
+price of espresso tonic,price_inquiry
+what does espresso tonic cost,price_inquiry
+espresso tonic price,price_inquiry
+i want a espresso tonic,order_intent
+order a espresso tonic,order_intent
+can i order espresso tonic,order_intent
+give me a espresso tonic,order_intent
+do you have espresso ginger ale,menu_inquiry
+is espresso ginger ale available,menu_inquiry
+do you serve espresso ginger ale,menu_inquiry
+can I get a espresso ginger ale,menu_inquiry
+how much is espresso ginger ale,price_inquiry
+price of espresso ginger ale,price_inquiry
+what does espresso ginger ale cost,price_inquiry
+espresso ginger ale price,price_inquiry
+i want a espresso ginger ale,order_intent
+order a espresso ginger ale,order_intent
+can i order espresso ginger ale,order_intent
+give me a espresso ginger ale,order_intent
+do you have americano,menu_inquiry
+is americano available,menu_inquiry
+do you serve americano,menu_inquiry
+can I get a americano,menu_inquiry
+how much is americano,price_inquiry
+price of americano,price_inquiry
+what does americano cost,price_inquiry
+americano price,price_inquiry
+i want a americano,order_intent
+order a americano,order_intent
+can i order americano,order_intent
+give me a americano,order_intent
+do you have doppio,menu_inquiry
+is doppio available,menu_inquiry
+do you serve doppio,menu_inquiry
+can I get a doppio,menu_inquiry
+how much is doppio,price_inquiry
+price of doppio,price_inquiry
+what does doppio cost,price_inquiry
+doppio price,price_inquiry
+i want a doppio,order_intent
+order a doppio,order_intent
+can i order doppio,order_intent
+give me a doppio,order_intent
+do you have ristretto,menu_inquiry
+is ristretto available,menu_inquiry
+do you serve ristretto,menu_inquiry
+can I get a ristretto,menu_inquiry
+how much is ristretto,price_inquiry
+price of ristretto,price_inquiry
+what does ristretto cost,price_inquiry
+ristretto price,price_inquiry
+i want a ristretto,order_intent
+order a ristretto,order_intent
+can i order ristretto,order_intent
+give me a ristretto,order_intent
+do you have espresso romano,menu_inquiry
+is espresso romano available,menu_inquiry
+do you serve espresso romano,menu_inquiry
+can I get a espresso romano,menu_inquiry
+how much is espresso romano,price_inquiry
+price of espresso romano,price_inquiry
+what does espresso romano cost,price_inquiry
+espresso romano price,price_inquiry
+i want a espresso romano,order_intent
+order a espresso romano,order_intent
+can i order espresso romano,order_intent
+give me a espresso romano,order_intent
+do you have veg bagel,menu_inquiry
+is veg bagel available,menu_inquiry
+do you serve veg bagel,menu_inquiry
+can I get a veg bagel,menu_inquiry
+how much is veg bagel,price_inquiry
+price of veg bagel,price_inquiry
+what does veg bagel cost,price_inquiry
+veg bagel price,price_inquiry
+i want a veg bagel,order_intent
+order a veg bagel,order_intent
+can i order veg bagel,order_intent
+give me a veg bagel,order_intent
+do you have veg burger,menu_inquiry
+is veg burger available,menu_inquiry
+do you serve veg burger,menu_inquiry
+can I get a veg burger,menu_inquiry
+how much is veg burger,price_inquiry
+price of veg burger,price_inquiry
+what does veg burger cost,price_inquiry
+veg burger price,price_inquiry
+i want a veg burger,order_intent
+order a veg burger,order_intent
+can i order veg burger,order_intent
+give me a veg burger,order_intent
+do you have falafel burger,menu_inquiry
+is falafel burger available,menu_inquiry
+do you serve falafel burger,menu_inquiry
+can I get a falafel burger,menu_inquiry
+how much is falafel burger,price_inquiry
+price of falafel burger,price_inquiry
+what does falafel burger cost,price_inquiry
+falafel burger price,price_inquiry
+i want a falafel burger,order_intent
+order a falafel burger,order_intent
+can i order falafel burger,order_intent
+give me a falafel burger,order_intent
+do you have chicken bagel,menu_inquiry
+is chicken bagel available,menu_inquiry
+do you serve chicken bagel,menu_inquiry
+can I get a chicken bagel,menu_inquiry
+how much is chicken bagel,price_inquiry
+price of chicken bagel,price_inquiry
+what does chicken bagel cost,price_inquiry
+chicken bagel price,price_inquiry
+i want a chicken bagel,order_intent
+order a chicken bagel,order_intent
+can i order chicken bagel,order_intent
+give me a chicken bagel,order_intent
+do you have chicken burger,menu_inquiry
+is chicken burger available,menu_inquiry
+do you serve chicken burger,menu_inquiry
+can I get a chicken burger,menu_inquiry
+how much is chicken burger,price_inquiry
+price of chicken burger,price_inquiry
+what does chicken burger cost,price_inquiry
+chicken burger price,price_inquiry
+i want a chicken burger,order_intent
+order a chicken burger,order_intent
+can i order chicken burger,order_intent
+give me a chicken burger,order_intent
+do you have smoked chicken burger,menu_inquiry
+is smoked chicken burger available,menu_inquiry
+do you serve smoked chicken burger,menu_inquiry
+can I get a smoked chicken burger,menu_inquiry
+how much is smoked chicken burger,price_inquiry
+price of smoked chicken burger,price_inquiry
+what does smoked chicken burger cost,price_inquiry
+smoked chicken burger price,price_inquiry
+i want a smoked chicken burger,order_intent
+order a smoked chicken burger,order_intent
+can i order smoked chicken burger,order_intent
+give me a smoked chicken burger,order_intent
+do you have korean chicken burger,menu_inquiry
+is korean chicken burger available,menu_inquiry
+do you serve korean chicken burger,menu_inquiry
+can I get a korean chicken burger,menu_inquiry
+how much is korean chicken burger,price_inquiry
+price of korean chicken burger,price_inquiry
+what does korean chicken burger cost,price_inquiry
+korean chicken burger price,price_inquiry
+i want a korean chicken burger,order_intent
+order a korean chicken burger,order_intent
+can i order korean chicken burger,order_intent
+give me a korean chicken burger,order_intent
+do you have pesto mushroom half pounder,menu_inquiry
+is pesto mushroom half pounder available,menu_inquiry
+do you serve pesto mushroom half pounder,menu_inquiry
+can I get a pesto mushroom half pounder,menu_inquiry
+how much is pesto mushroom half pounder,price_inquiry
+price of pesto mushroom half pounder,price_inquiry
+what does pesto mushroom half pounder cost,price_inquiry
+pesto mushroom half pounder price,price_inquiry
+i want a pesto mushroom half pounder,order_intent
+order a pesto mushroom half pounder,order_intent
+can i order pesto mushroom half pounder,order_intent
+give me a pesto mushroom half pounder,order_intent
+do you have tomato bellpepper half pounder,menu_inquiry
+is tomato bellpepper half pounder available,menu_inquiry
+do you serve tomato bellpepper half pounder,menu_inquiry
+can I get a tomato bellpepper half pounder,menu_inquiry
+how much is tomato bellpepper half pounder,price_inquiry
+price of tomato bellpepper half pounder,price_inquiry
+what does tomato bellpepper half pounder cost,price_inquiry
+tomato bellpepper half pounder price,price_inquiry
+i want a tomato bellpepper half pounder,order_intent
+order a tomato bellpepper half pounder,order_intent
+can i order tomato bellpepper half pounder,order_intent
+give me a tomato bellpepper half pounder,order_intent
+do you have clt half pounder,menu_inquiry
+is clt half pounder available,menu_inquiry
+do you serve clt half pounder,menu_inquiry
+can I get a clt half pounder,menu_inquiry
+how much is clt half pounder,price_inquiry
+price of clt half pounder,price_inquiry
+what does clt half pounder cost,price_inquiry
+clt half pounder price,price_inquiry
+i want a clt half pounder,order_intent
+order a clt half pounder,order_intent
+can i order clt half pounder,order_intent
+give me a clt half pounder,order_intent
+do you have blt half pounder,menu_inquiry
+is blt half pounder available,menu_inquiry
+do you serve blt half pounder,menu_inquiry
+can I get a blt half pounder,menu_inquiry
+how much is blt half pounder,price_inquiry
+price of blt half pounder,price_inquiry
+what does blt half pounder cost,price_inquiry
+blt half pounder price,price_inquiry
+i want a blt half pounder,order_intent
+order a blt half pounder,order_intent
+can i order blt half pounder,order_intent
+give me a blt half pounder,order_intent
+do you have crispies with mushroom,menu_inquiry
+is crispies with mushroom available,menu_inquiry
+do you serve crispies with mushroom,menu_inquiry
+can I get a crispies with mushroom,menu_inquiry
+how much is crispies with mushroom,price_inquiry
+price of crispies with mushroom,price_inquiry
+what does crispies with mushroom cost,price_inquiry
+crispies with mushroom price,price_inquiry
+i want a crispies with mushroom,order_intent
+order a crispies with mushroom,order_intent
+can i order crispies with mushroom,order_intent
+give me a crispies with mushroom,order_intent
+do you have crispies with baked beans,menu_inquiry
+is crispies with baked beans available,menu_inquiry
+do you serve crispies with baked beans,menu_inquiry
+can I get a crispies with baked beans,menu_inquiry
+how much is crispies with baked beans,price_inquiry
+price of crispies with baked beans,price_inquiry
+what does crispies with baked beans cost,price_inquiry
+crispies with baked beans price,price_inquiry
+i want a crispies with baked beans,order_intent
+order a crispies with baked beans,order_intent
+can i order crispies with baked beans,order_intent
+give me a crispies with baked beans,order_intent
+do you have honey butter toast,menu_inquiry
+is honey butter toast available,menu_inquiry
+do you serve honey butter toast,menu_inquiry
+can I get a honey butter toast,menu_inquiry
+how much is honey butter toast,price_inquiry
+price of honey butter toast,price_inquiry
+what does honey butter toast cost,price_inquiry
+honey butter toast price,price_inquiry
+i want a honey butter toast,order_intent
+order a honey butter toast,order_intent
+can i order honey butter toast,order_intent
+give me a honey butter toast,order_intent
+do you have hot chocolate,menu_inquiry
+is hot chocolate available,menu_inquiry
+do you serve hot chocolate,menu_inquiry
+can I get a hot chocolate,menu_inquiry
+how much is hot chocolate,price_inquiry
+price of hot chocolate,price_inquiry
+what does hot chocolate cost,price_inquiry
+hot chocolate price,price_inquiry
+i want a hot chocolate,order_intent
+order a hot chocolate,order_intent
+can i order hot chocolate,order_intent
+give me a hot chocolate,order_intent
+do you have blueberry hill,menu_inquiry
+is blueberry hill available,menu_inquiry
+do you serve blueberry hill,menu_inquiry
+can I get a blueberry hill,menu_inquiry
+how much is blueberry hill,price_inquiry
+price of blueberry hill,price_inquiry
+what does blueberry hill cost,price_inquiry
+blueberry hill price,price_inquiry
+i want a blueberry hill,order_intent
+order a blueberry hill,order_intent
+can i order blueberry hill,order_intent
+give me a blueberry hill,order_intent
+do you have mixed berry smoothie,menu_inquiry
+is mixed berry smoothie available,menu_inquiry
+do you serve mixed berry smoothie,menu_inquiry
+can I get a mixed berry smoothie,menu_inquiry
+how much is mixed berry smoothie,price_inquiry
+price of mixed berry smoothie,price_inquiry
+what does mixed berry smoothie cost,price_inquiry
+mixed berry smoothie price,price_inquiry
+i want a mixed berry smoothie,order_intent
+order a mixed berry smoothie,order_intent
+can i order mixed berry smoothie,order_intent
+give me a mixed berry smoothie,order_intent
+do you have warm matcha latte,menu_inquiry
+is warm matcha latte available,menu_inquiry
+do you serve warm matcha latte,menu_inquiry
+can I get a warm matcha latte,menu_inquiry
+how much is warm matcha latte,price_inquiry
+price of warm matcha latte,price_inquiry
+what does warm matcha latte cost,price_inquiry
+warm matcha latte price,price_inquiry
+i want a warm matcha latte,order_intent
+order a warm matcha latte,order_intent
+can i order warm matcha latte,order_intent
+give me a warm matcha latte,order_intent
+do you have iced matcha latte,menu_inquiry
+is iced matcha latte available,menu_inquiry
+do you serve iced matcha latte,menu_inquiry
+can I get a iced matcha latte,menu_inquiry
+how much is iced matcha latte,price_inquiry
+price of iced matcha latte,price_inquiry
+what does iced matcha latte cost,price_inquiry
+iced matcha latte price,price_inquiry
+i want a iced matcha latte,order_intent
+order a iced matcha latte,order_intent
+can i order iced matcha latte,order_intent
+give me a iced matcha latte,order_intent
+do you have matcha mole latte,menu_inquiry
+is matcha mole latte available,menu_inquiry
+do you serve matcha mole latte,menu_inquiry
+can I get a matcha mole latte,menu_inquiry
+how much is matcha mole latte,price_inquiry
+price of matcha mole latte,price_inquiry
+what does matcha mole latte cost,price_inquiry
+matcha mole latte price,price_inquiry
+i want a matcha mole latte,order_intent
+order a matcha mole latte,order_intent
+can i order matcha mole latte,order_intent
+give me a matcha mole latte,order_intent
+do you have mountain bean black tea,menu_inquiry
+is mountain bean black tea available,menu_inquiry
+do you serve mountain bean black tea,menu_inquiry
+can I get a mountain bean black tea,menu_inquiry
+how much is mountain bean black tea,price_inquiry
+price of mountain bean black tea,price_inquiry
+what does mountain bean black tea cost,price_inquiry
+mountain bean black tea price,price_inquiry
+i want a mountain bean black tea,order_intent
+order a mountain bean black tea,order_intent
+can i order mountain bean black tea,order_intent
+give me a mountain bean black tea,order_intent
+do you have apple cinnamon tea,menu_inquiry
+is apple cinnamon tea available,menu_inquiry
+do you serve apple cinnamon tea,menu_inquiry
+can I get a apple cinnamon tea,menu_inquiry
+how much is apple cinnamon tea,price_inquiry
+price of apple cinnamon tea,price_inquiry
+what does apple cinnamon tea cost,price_inquiry
+apple cinnamon tea price,price_inquiry
+i want a apple cinnamon tea,order_intent
+order a apple cinnamon tea,order_intent
+can i order apple cinnamon tea,order_intent
+give me a apple cinnamon tea,order_intent
+do you have hibiscus lemongrass tisane,menu_inquiry
+is hibiscus lemongrass tisane available,menu_inquiry
+do you serve hibiscus lemongrass tisane,menu_inquiry
+can I get a hibiscus lemongrass tisane,menu_inquiry
+how much is hibiscus lemongrass tisane,price_inquiry
+price of hibiscus lemongrass tisane,price_inquiry
+what does hibiscus lemongrass tisane cost,price_inquiry
+hibiscus lemongrass tisane price,price_inquiry
+i want a hibiscus lemongrass tisane,order_intent
+order a hibiscus lemongrass tisane,order_intent
+can i order hibiscus lemongrass tisane,order_intent
+give me a hibiscus lemongrass tisane,order_intent
+do you have the zen plum,menu_inquiry
+is the zen plum available,menu_inquiry
+do you serve the zen plum,menu_inquiry
+can I get a the zen plum,menu_inquiry
+how much is the zen plum,price_inquiry
+price of the zen plum,price_inquiry
+what does the zen plum cost,price_inquiry
+the zen plum price,price_inquiry
+i want a the zen plum,order_intent
+order a the zen plum,order_intent
+can i order the zen plum,order_intent
+give me a the zen plum,order_intent
+do you have cassava gold,menu_inquiry
+is cassava gold available,menu_inquiry
+do you serve cassava gold,menu_inquiry
+can I get a cassava gold,menu_inquiry
+how much is cassava gold,price_inquiry
+price of cassava gold,price_inquiry
+what does cassava gold cost,price_inquiry
+cassava gold price,price_inquiry
+i want a cassava gold,order_intent
+order a cassava gold,order_intent
+can i order cassava gold,order_intent
+give me a cassava gold,order_intent
+do you have sografik cassava,menu_inquiry
+is sografik cassava available,menu_inquiry
+do you serve sografik cassava,menu_inquiry
+can I get a sografik cassava,menu_inquiry
+how much is sografik cassava,price_inquiry
+price of sografik cassava,price_inquiry
+what does sografik cassava cost,price_inquiry
+sografik cassava price,price_inquiry
+i want a sografik cassava,order_intent
+order a sografik cassava,order_intent
+can i order sografik cassava,order_intent
+give me a sografik cassava,order_intent
+show top 10 clients,top_clients
+who are the top customers,top_clients
+best customers by spending,top_clients
+top clients this month,top_clients
+who spends the most,top_clients
+highest spending customers,top_clients
+list top 10 buyers,top_clients
+top customers today,top_clients
+what is today's revenue,revenue_query
+total sales today,revenue_query
+how much did we earn today,revenue_query
+show total revenue,revenue_query
+total earnings this week,revenue_query
+how much money today,revenue_query
+revenue report,revenue_query
+how many orders today,order_stats
+total orders placed,order_stats
+show recent orders,order_stats
+last order placed,order_stats
+how many orders this week,order_stats
+show all orders,order_stats
+number of orders,order_stats
+what is the best seller,best_seller
+most popular item,best_seller
+what do customers order most,best_seller
+top selling item,best_seller
+most ordered drink,best_seller
+which item sells the most,best_seller
+hi,greeting
+hello,greeting
+hey there,greeting
+namaste,greeting
+good morning,greeting
+good evening,greeting
+howdy,greeting
+bye,goodbye
+goodbye,goodbye
+see you,goodbye
+thanks bye,goodbye
+take care,goodbye
+what time do you open,hours_location
+when do you close,hours_location
+where is corridor seven,hours_location
+what are your timings,hours_location
+location of cafe,hours_location
+address of c7,hours_location
+are you open now,hours_location
+opening hours,hours_location
